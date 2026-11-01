@@ -12,14 +12,3 @@ __pycache__/
 .idea/
 .DS_Store
 Thumbs.db
-
-# Firmware IDE and build outputs
-*.elf
-*.map
-*.hex
-*.bin
-Debug/
-Release/
-.settings/
-.cproject
-.project

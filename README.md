@@ -72,13 +72,3 @@ ros2 launch wooak lidarall.launch.py
 - 일부 launch 명령의 절대 경로가 `/home/kkk/come_ws/src/wooak/wooak/...` 형식으로 작성되어 있음
 
 실제 환경에 맞게 카메라 장치, 시리얼 포트, baudrate 및 ROS 2 경로를 수정해야 합니다.
-
-## 펌웨어 소스
-
-텍스트 파일에 합쳐져 있던 MCU 코드는 MCU별로 분리했습니다.
-
-- `firmware/stm32_recording/main.c`: STM32 모터 기록/재생 프로그램
-- `firmware/stm32_joystick/main.c`: STM32 조이스틱 기반 주행/카메라 제어 메뉴
-- `firmware/c2000_f2807x/main.c`: TI C2000 짐벌, 서보 및 4축 모터 제어
-
-펌웨어별 헤더, 핀 설정, ADC/DMA/I2C/UART 초기화, 링커 스크립트와 IDE 프로젝트 파일이 필요합니다.
